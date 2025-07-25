@@ -42,9 +42,10 @@ const Navbar = () => {
           <div className="text-2xl cursor-pointer">
             <FaShoppingBasket />
           </div>
-          <button className="rounded-full bg-[#F66076] text-white font-light px-9 py-4">
-            Appointment
-          </button>
+          <button className="rounded-full bg-[#F66076] text-white font-light px-5 py-3 md:px-9 md:py-4 text-sm md:text-base">
+  Appointment
+</button>
+
         </div>
       </div>
     </nav>
