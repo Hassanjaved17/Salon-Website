@@ -1,19 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEnvelope,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import {
   faFacebook,
   faTwitter,
   faLinkedin,
   faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa";
+import { FaMobile } from "react-icons/fa";
+
+
+
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-800 text-sm border-t border-gray-200">
+    <footer className="bg-white text-gray-800 text-sm ">
       {/* Top Row: Logo and Social Icons */}
       <div className="flex flex-col sm:flex-row justify-between items-center max-w-6xl mx-auto px-6 py-6">
         <img src="./Dictate-logo-new.svg" alt="logo" className="h-14" />
@@ -38,7 +40,7 @@ const Footer = () => {
       </div>
 
       {/* Middle Grid: About, Contact, Hours */}
-      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-300 border-y">
+      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#DDDAD0] border-y border-[#DDDAD0]">
         {/* About Us */}
         <div className="sm:pr-8 pb-8 sm:pb-0">
           <p className="text-lg font-semibold mb-4 text-black">About Us</p>
@@ -53,22 +55,22 @@ const Footer = () => {
         <div className="sm:px-8 py-8 sm:py-0">
           <p className="text-lg font-semibold mb-4 text-black">Contact Us</p>
           <div className="flex items-start gap-3 mb-3">
-            <span className="bg-[#DFF6F8] text-[#1984BC] p-2 rounded-full">
-              📍
+            <span className="bg-[#DFF6F8] text-black p-2 rounded-full">
+              <FaLocationDot />
             </span>
             <p className="text-gray-700">
               Parkway, Solent Business Park, Whiteley, Hants, PO15 7AN
             </p>
           </div>
           <div className="flex items-center gap-3 mb-3">
-            <span className="bg-[#DFF6F8] text-[#1984BC] p-2 rounded-full">
-              <FontAwesomeIcon icon={faEnvelope} />
+            <span className="bg-[#DFF6F8] text-black p-2 rounded-full">
+              <FaEnvelope />
             </span>
             <p>support@webinane.com</p>
           </div>
           <div className="flex items-center gap-3">
-            <span className="bg-[#DFF6F8] text-[#1984BC] p-2 rounded-full">
-              <FontAwesomeIcon icon={faPhone} />
+            <span className="bg-[#DFF6F8] text-black p-2 rounded-full">
+              <FaMobile />
             </span>
             <p>+1 9175610778</p>
           </div>
