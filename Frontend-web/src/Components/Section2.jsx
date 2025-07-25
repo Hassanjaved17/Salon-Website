@@ -4,19 +4,19 @@ import { CiClock2 } from "react-icons/ci";
 const Section2 = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto px-6 py-16 gap-12">
-      <div className="relative flex flex-col-2 items-center justify-center gap-6 mt-10">
-<div className="flex flex-col-1 sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-  <img
-    src="./sidesection-img1.webp"
-    alt="Image 1"
-    className=" grid grid-cols-2 sm:grid-cols-2 w-full sm:w-1/2 object-cover rounded-lg shadow-md mt-10"
-  />
-  <img
-    src="./sidesection-img2.webp"
-    alt="Image 2"
-    className=" mb-10 grid grid-cols-2 sm:grid-cols-2 w-full sm:w-1/2 object-cover rounded-lg shadow-md"
-  />
-</div>
+      <div className="relative flex flex-col items-center justify-center gap-6 mt-10">
+        <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+          <img
+            src="./sidesection-img1.webp"
+            alt="Spa treatment"
+            className="w-full sm:w-1/2 object-cover rounded-lg shadow-md mt-10"
+          />
+          <img
+            src="./sidesection-img2.webp"
+            alt="Salon service"
+            className="w-full sm:w-1/2 object-cover rounded-lg shadow-md mb-10"
+          />
+        </div>
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
           <div className="bg-[#F6526D] w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full border-4 border-white border-dashed flex flex-col items-center justify-center text-white text-center shadow-xl">
@@ -39,9 +39,7 @@ const Section2 = () => {
         <p className="text-gray-700 text-sm md:text-base leading-relaxed">
           Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit
           auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-          elit consequat ipsum, nec sagittis sem nibh id elit. Aenean
-          sollicitudin, lorem quis bibe Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Odit, quaerat!
+          elit consequat ipsum, nec sagittis sem nibh id elit.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-2 sm:gap-4 pt-2">
           <CiClock2 className="text-[#F6526D] w-6 h-6" />
