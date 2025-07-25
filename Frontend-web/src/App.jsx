@@ -7,7 +7,7 @@ import Blog from "./pages/Blog";
 import Pages from "./pages/Pages";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Navbar from "./components/header/Navbar";
+import Navbar from "./Components/header/Navbar";
 import Footer from "./Components/footer/Footer";
 
 const App = () => {
