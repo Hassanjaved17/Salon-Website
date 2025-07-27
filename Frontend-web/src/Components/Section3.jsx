@@ -12,7 +12,7 @@ const Section3 = () => {
 
         {/* Text */}
         <div>
-          <p className="text-lg md:text-xl font-medium text-[#F66076] -mt-4">
+          <p style={{ fontFamily: 'Niconne, cursive' }} className="text-lg md:text-xl font-medium text-[#F66076] -mt-4">
             Welcome Spa and Salon
           </p>
           <p className="text-xl md:text-5xl font-semibold text-black">

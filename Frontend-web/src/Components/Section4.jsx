@@ -124,7 +124,7 @@ const Section4 = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-[#FFFCC8] to-pink-50 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
+        <p className="text-4xl font-semibold text-center mb-12">Quality Packages</p>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
