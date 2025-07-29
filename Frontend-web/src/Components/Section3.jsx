@@ -1,9 +1,20 @@
 import React from "react";
 import { PiFlowerLotusLight } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 const Section3 = () => {
   return (
-    <section className="px-4 py-10">
+    <motion.section
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: false, amount: 0.2 }} 
+  transition={{ duration: 1, ease: 'easeOut' }}
+
+
+
+
+
+      className="px-4 py-10">
       <div className="max-w-4xl mx-auto text-center space-y-4">
         {/* Icon */}
         <div className="text-[#F66076] text-5xl flex justify-center">
@@ -37,7 +48,7 @@ const Section3 = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

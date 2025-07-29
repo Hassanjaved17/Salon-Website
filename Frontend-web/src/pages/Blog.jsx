@@ -1,8 +1,12 @@
 import React from 'react'
+import OverlaySection from '../Components/OverlaySection.jsx';
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <>
+    <OverlaySection />
+    
+    </>
   )
 }
 
