@@ -154,11 +154,18 @@ const AppointmentSection = () => {
 
           {/* Placeholder for Step 2 */}
           {currentStep === 2 && (
-            <div className="text-center text-gray-800 text-base font-medium py-10">
+            <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+            
+
+            
+            className="text-center text-black text-base font-medium py-10">
               Step 2: Time selection coming soon...
-            </div>
+            </motion.div>
           )}
-        </div>
+        </div> 
       </div>
     </motion.div>
   );
