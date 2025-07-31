@@ -19,24 +19,26 @@ const Footer = () => {
       {/* Top Row: Logo and Social Icons */}
       <div className="flex flex-col sm:flex-row justify-between items-center max-w-6xl mx-auto px-6 py-6">
         <img src="./Dictate-logo-new.svg" alt="logo" className="h-14" />
-        <div className="flex gap-3 mt-4 sm:mt-0">
-          <FontAwesomeIcon
-            icon={faFacebook}
-            className="text-white text-lg bg-[#3B5998] p-3 rounded-full hover:bg-[#4E69A2] cursor-pointer transition-transform hover:scale-110"
-          />
-          <FontAwesomeIcon
-            icon={faTwitter}
-            className="text-white text-lg bg-[#33AAF3] p-3 rounded-full hover:bg-[#1d9bf0] cursor-pointer transition-transform hover:scale-110"
-          />
-          <FontAwesomeIcon
-            icon={faPinterest}
-            className="text-white text-lg bg-[#BD081C] p-3 rounded-full hover:bg-[#8c0615] cursor-pointer transition-transform hover:scale-110"
-          />
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="text-white text-lg bg-[#1984BC] p-3 rounded-full hover:bg-[#0a66c2] cursor-pointer transition-transform hover:scale-110"
-          />
-        </div>
+<div className="flex gap-3 mt-4 sm:mt-0">
+  <FontAwesomeIcon
+    icon={faFacebook}
+    className="text-white text-lg p-3 rounded-full cursor-pointer bg-[#3B5998] hover:bg-[#4E69A2] transition-transform duration-300 hover:scale-110 active:scale-110"
+  />
+  <FontAwesomeIcon
+    icon={faTwitter}
+    className="text-white text-lg p-3 rounded-full cursor-pointer bg-[#33AAF3] hover:bg-[#1d9bf0] transition-transform duration-300 hover:scale-110 active:scale-110"
+  />
+  <FontAwesomeIcon
+    icon={faPinterest}
+    className="text-white text-lg p-3 rounded-full cursor-pointer bg-[#BD081C] hover:bg-[#8c0615] transition-transform duration-300 hover:scale-110 active:scale-110"
+  />
+  <FontAwesomeIcon
+    icon={faLinkedin}
+    className="text-white text-lg p-3 rounded-full cursor-pointer bg-[#1984BC] hover:bg-[#0a66c2] transition-transform duration-300 hover:scale-110 active:scale-110"
+  />
+</div>
+
+
       </div>
 
       {/* Middle Grid: About, Contact, Hours */}
