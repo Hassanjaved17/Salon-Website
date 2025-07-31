@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Calendar, ArrowRight } from 'lucide-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HeroSection8 = () => {
+    useEffect(() => {
+        AOS.init({ duration: 800, once: true });
+    }, []);
+
     const articles = [
         {
             id: 1,
@@ -30,10 +36,10 @@ const HeroSection8 = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-[#FFFFFF] py-16 px-4 ">
+        <div className="min-h-screen bg-[#FFFFFF] py-16 px-4">
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-16" data-aos="fade-down">
                     <div style={{ fontFamily: 'niconne, cursive' }} className="text-[#F6526D] text-2xl font-normal italic mb-3">
                         Recent Blog
                     </div>
@@ -44,38 +50,41 @@ const HeroSection8 = () => {
                 </div>
 
                 {/* Articles Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-17 mb-9">
-                    {articles.map((article) => (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {articles.map((article, index) => (
                         <div
                             key={article.id}
                             className="group bg-white shadow-xl overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500"
+                            data-aos={index % 2 === 0 ? 'fade-up' : 'fade-down'}
                         >
                             {/* Image Section */}
-                            <div className="relative overflow-hidden h-64 ">
+                            <div className="relative overflow-hidden h-64">
                                 <img
                                     src={article.image}
                                     alt={article.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
 
+                    
                                 {/* Date Badge */}
-                                <div className="absolute top-4 left-0">
-                                    <div className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-6 py-3 rounded-r-full shadow-lg">
-                                        <div className="flex items-center gap-2">
-                                            <Calendar size={16} />
-                                            <span className="text-sm font-semibold text-[#FFFFFF] transform -rotate-360 origin-center whitespace-nowrap">
-                                                {article.date}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
+<div className="absolute top-2 left-0 sm:top-4">
+  <div className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-r-full shadow-lg">
+    <div className="flex items-center gap-1 sm:gap-2">
+      <Calendar size={14} className="sm:w-4 sm:h-4 w-3 h-3" />
+      <span className="text-xs sm:text-sm font-semibold text-white leading-tight">
+        {article.date}
+      </span>
+    </div>
+  </div>
+</div>
 
-                                {/* Category Badge */}
-                                <div className="absolute top-7 right-4">
-                                    <span className="bg-white/90 backdrop-blur-sm text-[#F6526D] px-3 py-1 rounded-full text-xs font-semibold shadow-md">
-                                        {article.category}
-                                    </span>
-                                </div>
+{/* Category Badge */}
+<div className="absolute top-2 right-2 sm:top-7 sm:right-4">
+  <span className="bg-white/90 backdrop-blur-sm text-[#F6526D] px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold shadow-md">
+    {article.category}
+  </span>
+</div>
+
 
                                 {/* Hover Overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -89,14 +98,13 @@ const HeroSection8 = () => {
                                 <p className="text-gray-500 text-sm leading-relaxed mb-6">
                                     {article.description}
                                 </p>
-
-
                             </div>
                         </div>
                     ))}
                 </div>
+
                 {/* Newsletter Signup */}
-                <div className="mt-20 bg-white rounded-3xl shadow-2xl p-12 text-center">
+                <div className="mt-20 bg-white rounded-3xl shadow-2xl p-12 text-center" data-aos="zoom-in">
                     <div className="max-w-2xl mx-auto">
                         <h3 className="text-3xl font-bold text-gray-800 mb-4">
                             Stay Updated with Beauty Tips
