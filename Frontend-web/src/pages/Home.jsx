@@ -7,6 +7,7 @@ import HeroSection5 from '../Components/HeroSection5'
 import HeroSection6 from '../Components/HeroSection6'
 import HeroSliderSec7 from '../Components/HeroSliderSec7'
 import HeroSection8 from '../Components/HeroSection8'
+import HeroSection9 from '../Components/HeroSection9'
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <HeroSection6 />
       <HeroSliderSec7 />
       <HeroSection8 />
+      <HeroSection9/>
 
     </>
   )
