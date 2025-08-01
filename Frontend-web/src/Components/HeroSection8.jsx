@@ -60,30 +60,29 @@ const HeroSection8 = () => {
                             {/* Image Section */}
                             <div className="relative overflow-hidden h-64">
                                 <img
-                                    src={article.image}
+                                    src={article.image} //
                                     alt={article.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
 
-                    
                                 {/* Date Badge */}
-<div className="absolute top-2 left-0 sm:top-4">
-  <div className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-r-full shadow-lg">
-    <div className="flex items-center gap-1 sm:gap-2">
-      <Calendar size={14} className="sm:w-4 sm:h-4 w-3 h-3" />
-      <span className="text-xs sm:text-sm font-semibold text-white leading-tight">
-        {article.date}
-      </span>
-    </div>
-  </div>
-</div>
+                                <div className="absolute top-2 left-0 sm:top-4">
+                                    <div className="bg-gradient-to-r from-rose-400 to-pink-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-r-full shadow-lg">
+                                        <div className="flex items-center gap-1 sm:gap-2">
+                                            <Calendar size={14} className="sm:w-4 sm:h-4 w-3 h-3" />
+                                            <span className="text-xs sm:text-sm font-semibold text-white leading-tight">
+                                                {article.date}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
 
-{/* Category Badge */}
-<div className="absolute top-2 right-2 sm:top-7 sm:right-4">
-  <span className="bg-white/90 backdrop-blur-sm text-[#F6526D] px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold shadow-md">
-    {article.category}
-  </span>
-</div>
+                                {/* Category Badge */}
+                                <div className="absolute top-2 right-2 sm:top-7 sm:right-4">
+                                    <span className="bg-white/90 backdrop-blur-sm text-[#F6526D] px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold shadow-md">
+                                        {article.category}
+                                    </span>
+                                </div>
 
 
                                 {/* Hover Overlay */}

@@ -29,7 +29,7 @@ const Section2 = () => {
       </div>
 
       <div className="flex flex-col justify-center space-y-6 text-center md:text-left mt-10 md:mt-0">
-        <p className="text-lg font-semibold text-[#F6526D]">
+        <p style={{fontFamily: 'niconne, cursive'}} className="text-2xl leading-tighttext-[#F6526D]">
           Welcome Spa and Salon
         </p>
         <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">

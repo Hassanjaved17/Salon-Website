@@ -9,11 +9,13 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./Components/header/Navbar";
 import Footer from "./Components/footer/Footer";
+import ScrollProgress from "./Components/ScrollProgress ";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+      <ScrollProgress />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
