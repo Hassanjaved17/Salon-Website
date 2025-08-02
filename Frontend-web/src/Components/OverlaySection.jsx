@@ -6,7 +6,7 @@ const OverlaySection = () => {
     <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
       {/* Background Image */}
       <img
-        src="/your-image.jpg" // Replace with your image path
+        src="/your-image.jpg"
         alt="Salon Background"
         className="w-full h-full object-cover"
       />
