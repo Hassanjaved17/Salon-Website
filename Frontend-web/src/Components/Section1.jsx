@@ -27,16 +27,15 @@ const Slide = () => {
     <>
       <div className=" mx-auto ">
         <Swiper
-          modules={[Autoplay, Pagination, EffectFade]}
+          modules={[Autoplay, EffectFade]}
           spaceBetween={30}
           slidesPerView={1}
-          loop={true} 
+          loop={true}
           effect="fade"
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
-          pagination={{ clickable: true }}
           speed={1000}
         >
           {slideImages.map((slide, index) => (
