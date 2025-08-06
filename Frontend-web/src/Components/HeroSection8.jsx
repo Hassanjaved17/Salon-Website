@@ -102,8 +102,8 @@ const HeroSection8 = () => {
                     ))}
                 </div>
 
-                {/* Newsletter Signup */}
-                <div className="mt-20 bg-white rounded-3xl shadow-2xl p-12 text-center" data-aos="zoom-in">
+                {/* Newsletter  Signup */}
+                {/* <div className="mt-20 bg-white rounded-3xl shadow-2xl p-12 text-center" data-aos="zoom-in">
                     <div className="max-w-2xl mx-auto">
                         <h3 className="text-3xl font-bold text-gray-800 mb-4">
                             Stay Updated with Beauty Tips
@@ -122,7 +122,7 @@ const HeroSection8 = () => {
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

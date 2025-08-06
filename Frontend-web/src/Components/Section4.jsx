@@ -8,7 +8,7 @@ import vacuumsuctionImg from "/vacuumsuction.webp";
 import perfectmanicureImg from "/perfectmanicure.webp";
 
 const Section4 = () => {
-  const [selectedService, setSelectedService] = useState("vacuum-suction");
+  const [selectedService , setSelectedService] = useState("vacuum-suction");
 
   const services = [
     {
