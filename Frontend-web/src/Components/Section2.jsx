@@ -20,8 +20,8 @@ const Section2 = () => {
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
           <div className="bg-[#F6526D] w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full border-4 border-white border-dashed flex flex-col items-center justify-center text-white text-center shadow-xl">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold">20</p>
-            <p className="text-xs sm:text-sm md:text-base mt-1">
+            <p style={{fontFamily: 'niconne, cursive'}} className="text-2xl sm:text-8xl md:text-6xl font-semibold ">20</p>
+            <p className="text-xs sm:text-sm md:text-sm mt-1">
               Years of Experience
             </p>
           </div>
