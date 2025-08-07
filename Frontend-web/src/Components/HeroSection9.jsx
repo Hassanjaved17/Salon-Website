@@ -35,9 +35,9 @@ const NewsletterSection = () => {
       {/* Icon */}
       <motion.div
         variants={scaleBounce}
-        className="w-16 h-16 rounded-full border border-black mx-auto flex items-center justify-center bg-[#FEF9C2] shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-2xl text-black mb-6"
+        className="w-16 h-16 rounded-full border border-black mx-auto flex items-center justify-center bg-[#FEF9C2] shadow-lg hover:shadow-xl hover:bg-[white] transition-transform transform hover:-translate-y-1 text-2xl text-black mb-6"
       >
-        <FaEnvelope />
+        < FaEnvelope />
       </motion.div>
 
       {/* Text */}

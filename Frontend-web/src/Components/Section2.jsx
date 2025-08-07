@@ -10,17 +10,17 @@ const Section2 = () => {
             src="./sidesection-img1.webp"
             alt="Spa treatment"
             className="w-full sm:w-1/2 object-cover rounded-lg shadow-md mt-10"
-          />
+            />
           <img
             src="./sidesection-img2.webp"
             alt="Salon service"
             className="w-full sm:w-1/2 object-cover rounded-lg shadow-md mb-10"
-          />
+          />   
         </div>
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
           <div className="bg-[#F6526D] w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full border-4 border-white border-dashed flex flex-col items-center justify-center text-white text-center shadow-xl">
-            <p style={{fontFamily: 'niconne, cursive'}} className="text-2xl sm:text-8xl md:text-6xl font-semibold ">20</p>
+            <p style={{ fontFamily: 'niconne, cursive' }} className="text-2xl sm:text-8xl md:text-6xl font-semibold ">20</p>
             <p className="text-xs sm:text-sm md:text-sm mt-1">
               Years of Experience
             </p>
@@ -28,7 +28,7 @@ const Section2 = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center space-y-6 text-center md:text-left mt-10 md:mt-0">
-        <p style={{fontFamily: 'niconne, cursive'}} className="text-2xl leading-tight text-[#F6526D]">
+        <p style={{ fontFamily: 'niconne, cursive' }} className="text-2xl leading-tight text-[#F6526D]">
           Welcome Spa and Salon
         </p>
         <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
