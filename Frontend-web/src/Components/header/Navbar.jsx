@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaShoppingBasket, FaBars, FaTimes } from "react-icons/fa";
@@ -29,7 +31,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <d iv className="hidden md:flex items-center gap-8 text-gray-800 font-normal text-lg">
+        <div className="hidden md:flex items-center gap-8 text-gray-800 font-normal text-lg">
           {navLinks.map((item, index) => (
             <motion.div
               key={index}
@@ -53,12 +55,12 @@ const Navbar = () => {
               />
             </motion.div>
           ))}
-        </d>
+        </div>
 
         {/* Right Side */}
         <div className="flex items-center gap-4">
           {/* Cart Icon */}
-          <div className="text-2xl cursor-pointer">
+            <div className="text-2xl cursor-pointer">
             <FaShoppingBasket />
           </div>
 
