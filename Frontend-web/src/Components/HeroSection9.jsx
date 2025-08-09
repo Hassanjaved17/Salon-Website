@@ -104,7 +104,7 @@ const HeroSection9 = () => {
                 To get the best of everything from head to toe
               </p>
               <h2 className="text-2xl sm:text-3xl font-semibold my-2 text-black">Get 20% Off Package</h2>
-              <button className="mt-4 px-6 py-3 bg-black text-white text-sm hover:bg-gray-800 transition">
+              <button className="mt-4 px-6 py-3 bg-black text-white text-sm hover:bg-white hover:text-black   border border-transparent  hover:border-black transition-all duration-300 ease-in-out">
                 Buy as a Gift Card
               </button>
             </div>
@@ -126,7 +126,7 @@ const HeroSection9 = () => {
                 To get the best of everything from head to toe
               </p>
               <h2 className="text-2xl sm:text-3xl font-semibold my-2 text-black">Get 20% Off Package</h2>
-              <button className="mt-4 px-6 py-3 bg-rose-500 text-white text-sm hover:bg-rose-600 transition">
+              <button className="mt-4 px-6 py-3 bg-[#F6526D] text-white text-sm hover:bg-white hover:text-[#F6526D] border border-transparent hover:border-[#F6526D] transition-all duration-300 ease-in-out">
                 Buy as a Gift Card
               </button>
             </div>
