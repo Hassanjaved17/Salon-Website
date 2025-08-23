@@ -17,7 +17,7 @@ const ScrollProgress = () => {
 
       if (progressRef.current) {
         progressRef.current.style.transform = `scaleX(${scrollPercent / 100})`;
-      }
+      }  
 
       animationFrame.current = null;
     };
