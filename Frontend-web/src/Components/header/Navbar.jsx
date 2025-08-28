@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaShoppingBasket, FaBars, FaTimes } from "react-icons/fa";
@@ -60,7 +58,7 @@ const Navbar = () => {
         {/* Right Side */}
         <div className="flex items-center gap-4">
           {/* Cart Icon */}
-            <div className="text-2xl cursor-pointer">
+          <div className="text-2xl cursor-pointer">
             <FaShoppingBasket />
           </div>
 
@@ -92,6 +90,7 @@ const Navbar = () => {
               key={index}
               className="relative group"
               whileHover="hover"
+              whileTap="hover"
               initial="initial"
               animate="initial"
             >
@@ -113,6 +112,7 @@ const Navbar = () => {
           ))}
         </motion.div>
       )}
+
     </nav>
   );
 };
