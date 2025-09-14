@@ -23,7 +23,7 @@ export default function Products() {
           {products.slice(0, visible).map((p) => (
             <motion.div
               key={p.id}
-              layout
+              layout 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 30 }}
