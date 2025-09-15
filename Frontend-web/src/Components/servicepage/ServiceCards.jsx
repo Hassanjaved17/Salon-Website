@@ -2,14 +2,14 @@ import React from 'react'
 
 const ServiceCards = () => {
     const services = [
-        { title: "Nail Polish", image: "/nailpolish.webp" },
-        { title: "Perfect Manicure", image: "/perfectmanicure.webp" },
-        { title: "Acrylic Nails", image: "/acrylicnail.webp" },
-        { title: "Nail Care", image: "/nailcare.webp" },
-        { title: "Detox Therapy Service", image: "/detox-therapy.webp" },
-        { title: "Vacuum Suction Therapy", image: "/vacuumsuction.webp" },
-        { title: "Deep Tissue Massage", image: "/deeptissue.webp" },
-        { title: "Booking Payment Service ", image: "/booking-payment-service.webp" },
+        { title: "Nail Polish", image: "/nailpolish.webp", price: "$25" },
+        { title: "Perfect Manicure", image: "/perfectmanicure.webp", price: "$30" },
+        { title: "Acrylic Nails", image: "/acrylicnail.webp", price: "$40" },
+        { title: "Nail Care", image: "/nailcare.webp", price: "$20" },
+        { title: "Detox Therapy Service", image: "/detox-therapy.webp", price: "$50" },
+        { title: "Vacuum Suction Therapy", image: "/vacuumsuction.webp", price: "$45" },
+        { title: "Deep Tissue Massage", image: "/deeptissue.webp", price: "$60" },
+        { title: "Booking Payment Service", image: "/booking-payment-service.webp", price: "$15" },
     ];
 
     return (
@@ -22,10 +22,8 @@ const ServiceCards = () => {
                         'url(//dictate.webinane.com/wp-content/uploads/2025/01/slide-2-5.jpg)',
                 }}
             >
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-black/60"></div>
 
-                {/* Text Content */}
                 <div className="relative mx-20 text-white">
                     <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold">
                         Service Style
@@ -42,16 +40,24 @@ const ServiceCards = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-center text-center"
+                            className="relative group flex flex-col items-center text-center"
                         >
-                            {/* Circle Image */}
-                            <div className="w-70 h-70 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                            {/* Circle Image with hover border */}
+                            <div className="relative w-70 h-70 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-md">
+                                {/* Hover Border */}
+                                <div className="absolute inset-0 rounded-full border-8 border-transparent group-hover:border-[#F6526D] transition-all duration-500 ease-in-out pointer-events-none"></div>
+
                                 <img
                                     src={service.image}
                                     alt={service.title}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover rounded-full"
                                 />
                             </div>
+
+                            {/* Price Badge with smooth pop-in effect */}
+                            <span className="absolute -top-2 right-12 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 flex items-center justify-center w-14 h-14 rounded-full bg-[#F6526D] text-white text-sm font-bold shadow-md transition-all duration-500 ease-in-out">
+                                {service.price}
+                            </span>
 
                             {/* Title */}
                             <h3 className="mt-4 text-lg sm:text-2xl font-bold text-black">
