@@ -42,22 +42,27 @@ const ServiceCards = () => {
                             key={index}
                             className="relative group flex flex-col items-center text-center"
                         >
-                            {/* Circle Image with hover border */}
-                            <div className="relative w-70 h-70 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-md">
-                                {/* Hover Border */}
-                                <div className="absolute inset-0 rounded-full border-8 border-transparent group-hover:border-[#F6526D] transition-all duration-500 ease-in-out pointer-events-none"></div>
+                           {/* Circle Image with hover border */}
+<div className="relative w-70 h-70 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-md transition-all duration-500 ease-in-out">
+  {/* Hover Border with smooth transition */}
+  <div className="absolute inset-0 rounded-full border-[10px] border-transparent group-hover:border-[#F6526D] transition-all duration-500 ease-in-out pointer-events-none"></div>
 
-                                <img
-                                    src={service.image}
-                                    alt={service.title}
-                                    className="w-full h-full object-cover rounded-full"
-                                />
-                            </div>
+  <img
+    src={service.image}
+    alt={service.title}
+    className="w-full h-full object-cover rounded-full"
+  />
+</div>
 
-                            {/* Price Badge with smooth pop-in effect */}
-                            <span className="absolute -top-2 right-12 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 flex items-center justify-center w-14 h-14 rounded-full bg-[#F6526D] text-white text-sm font-bold shadow-md transition-all duration-500 ease-in-out">
-                                {service.price}
-                            </span>
+{/* Price Badge */}
+<span className="absolute -top-4 right-10 opacity-0 translate-y-[-10px] scale-75 
+    group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 
+    flex items-center justify-center w-16 h-16 rounded-full 
+    bg-[#F6526D] text-white text-sm font-bold shadow-lg 
+    transition-all duration-500 ease-in-out">
+  {service.price}
+</span>
+
 
                             {/* Title */}
                             <h3 className="mt-4 text-lg sm:text-2xl font-bold text-black">
