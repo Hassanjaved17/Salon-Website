@@ -23,12 +23,14 @@ export default function Products() {
           {products.slice(0, visible).map((p) => (
             <motion.div
               key={p.id}
-              layout 
+              layout
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 30 }}
               transition={{ duration: 0.4 }}
+              // 🔑 make card focusable for mobile taps
               className="bg-white shadow-lg border border-gray-100 rounded-md overflow-hidden relative group w-full max-w-xs mx-auto"
+              tabIndex={0}
             >
               {/* Sale Badge */}
               {p.sale && (
@@ -48,7 +50,14 @@ export default function Products() {
                 {/* Add to Cart Button */}
                 <button
                   aria-label={`Add ${p.title} to cart`}
-                  className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white p-3 shadow-md opacity-0 group-hover:opacity-100 transition"
+                  className="
+                    absolute top-1/2 right-0 transform -translate-y-1/2
+                    bg-black text-white p-3 shadow-md
+                    opacity-0
+                    group-hover:opacity-100          /* desktop hover */
+                    group-focus-within:opacity-100   /* mobile tap */
+                    transition
+                  "
                 >
                   <FaPlus />
                 </button>
