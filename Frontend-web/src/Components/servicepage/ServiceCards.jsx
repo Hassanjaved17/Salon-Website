@@ -22,8 +22,7 @@ const ServiceCards = () => {
     window.addEventListener("resize", checkTouch);
     return () => window.removeEventListener("resize", checkTouch);
   }, []);
-
-  return (
+return (
     <div className="main">
       {/* Hero Section */}
       <div
