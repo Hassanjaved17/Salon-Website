@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";   
 import products from "../Data/ProductsData.jsx";
 
 export default function Products() {
@@ -70,9 +70,8 @@ export default function Products() {
                   {[...Array(5)].map((_, i) => (
                     <FaStar
                       key={i}
-                      className={`${
-                        i < p.rating ? "text-[#F6526D]" : "text-[#C9CDCF]"
-                      } text-sm`}
+                      className={`${i < p.rating ? "text-[#F6526D]" : "text-[#C9CDCF]"
+                        } text-sm`}
                     />
                   ))}
                 </div>

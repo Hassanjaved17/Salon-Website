@@ -20,9 +20,8 @@ import { motion } from "framer-motion";
 // 🔑 Loader Component
 const Loader = ({ fadeOut }) => (
   <div
-    className={`fixed inset-0 z-[9999] bg-[#F6526D] flex items-center justify-center transition-opacity duration-500 ${
-      fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
-    }`}
+    className={`fixed inset-0 z-[9999] bg-[#F6526D] flex items-center justify-center transition-opacity duration-500 ${fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
+      }`}
   >
     {/* Bouncing Dots */}
     <div className="flex space-x-3">

@@ -65,7 +65,7 @@ const ServiceCards = () => {
                   ${isTouch && isActive ? "border-[10px] border-[#F6526D]" : "border-[10px] border-transparent"}
                   ${!isTouch ? "group-hover:border-[#F6526D]" : ""}`}
                 >
-                  <img
+                  <img  
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover rounded-full"
