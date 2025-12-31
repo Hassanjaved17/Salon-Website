@@ -55,7 +55,7 @@ const HeroSection5 = () => {
         </p>
       </div>
 
-      
+
 
       {/* Products Grid */}
       <div className="max-w-7xl mx-auto px-4 relative mt-16">
@@ -97,7 +97,7 @@ const HeroSection5 = () => {
 
 
       </div>
-  </section>
+    </section>
   );
 };
 
