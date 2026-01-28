@@ -16,8 +16,9 @@ import Navbar from "./Components/header/Navbar";
 import Footer from "./Components/footer/Footer";
 import ScrollProgress from "./Components/ScrollProgress ";
 import { motion } from "framer-motion";
+import ScrollToTop from "./Components/ScrollToTop";
 
-// 🔑 Loader Component
+//  Loader Component
 const Loader = ({ fadeOut }) => (
   <div
     className={`fixed inset-0 z-[9999] bg-[#F6526D] flex items-center justify-center transition-opacity duration-500 ${fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
@@ -56,6 +57,7 @@ const AnimatedRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
+
   );
 };
 
@@ -64,7 +66,7 @@ const AppContent = () => {
   const [fadeOut, setFadeOut] = useState(false);
   const location = useLocation();
 
-  // 👇 show loader and fade out after page renders
+  // show loader and fade out after page renders
   const triggerLoader = () => {
     setLoading(true);
     setFadeOut(false);
@@ -100,7 +102,9 @@ const AppContent = () => {
           <Navbar onLinkClick={triggerLoader} />
           <AnimatedRoutes />
           <Footer />
+          <ScrollToTop />
         </motion.div>
+
       )}
     </>
   );
