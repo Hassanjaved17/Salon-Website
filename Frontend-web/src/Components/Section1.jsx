@@ -7,9 +7,9 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 const slideImages = [
-  { url: "/slider-images/slide1.jpg" },
-  { url: "/slider-images/slide2.jpg" },
-  { url: "/slider-images/slide3.jpg" },
+  { url: "/slider-images/slide1.webp" },
+  { url: "/slider-images/slide2.webp" },
+  { url: "/slider-images/slide3.webp" },
 ];
 
 const Slide = () => {
