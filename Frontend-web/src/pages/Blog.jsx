@@ -1,13 +1,12 @@
 import React from 'react'
-
+import BlogCards from '../Components/blogpage/BlogCards';
 
 const Blog = () => {
   return (
     <>
-    
-    
-    Page under development  </>
-  ) 
+      <BlogCards />  
+    </>
+  )
 }
 
 export default Blog
