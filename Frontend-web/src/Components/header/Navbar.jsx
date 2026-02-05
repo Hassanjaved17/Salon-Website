@@ -13,7 +13,7 @@ const navLinks = [
   { to: "/contact", label: "Contact" },
 ];
 
-const Navbar = () => { 
+const Navbar = ({ openCart }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -58,7 +58,10 @@ const Navbar = () => {
         {/* Right Side */}
         <div className="flex items-center gap-4">
           {/* Cart Icon */}
-          <div className="text-2xl cursor-pointer">
+          <div
+            className="text-2xl cursor-pointer relative"
+            onClick={openCart}
+          >
             <FaShoppingBasket />
           </div>
 

@@ -59,7 +59,7 @@ const BlogCards = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div className="flex items-center space-x-3 text-base">
-              <a href="/" className="text-rose-300 hover:text-white transition-colors duration-300">
+              <a href="/" className="text-[#EA4743] hover:text-white transition-colors duration-300">
                 Home
               </a>
               <span className="text-gray-400">/</span>
@@ -103,7 +103,7 @@ const BlogCards = () => {
                       }`}
                   >
                     {/* Date */}
-                    <div className="flex items-center text-rose-500 mb-4">
+                    <div className="flex items-center text-[#EA4743] mb-4">
                       <svg
                         className="w-5 h-5 mr-2.5"
                         fill="currentColor"
@@ -176,9 +176,9 @@ const BlogCards = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-rose-500 shadow-lg"
+              className="flex-1 px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#EA4743]  shadow-lg"
             />
-            <button className="px-8 py-4 bg-rose-500 text-white rounded-full font-semibold hover:bg-rose-600 transition-colors duration-300 shadow-lg hover:shadow-xl">
+            <button className="px-8 py-4 bg-[#EA4743] text-white rounded-full font-semibold hover:bg-rose-600 transition-colors duration-300 shadow-lg hover:shadow-xl">
               Subscribe
             </button>
           </div>

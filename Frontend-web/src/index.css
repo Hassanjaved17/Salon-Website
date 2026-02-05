@@ -12,6 +12,10 @@
 
 
 
-*{
+* {
   font-family: "Manrope", sans-serif;
+}
+
+html {
+  scrollbar-gutter: stable;
 }
