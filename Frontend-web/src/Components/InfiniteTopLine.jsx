@@ -21,7 +21,6 @@ const InfiniteTopLoader = () => {
           filter: 'blur(4px)',
         }}
       ></div>
-
       {/* Shimmer effect */}
       <div
         className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"

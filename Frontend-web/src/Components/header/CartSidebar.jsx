@@ -17,7 +17,7 @@ const CartSidebar = ({ isOpen, onClose }) => {
 
           {/* Sidebar */}
           <motion.div
-            className="fixed top-0 right-0 h-full w-[350px] bg-white z-50 shadow-xl p-6"
+            className="fixed top-0 right-0 h-full w-full sm:w-[350px] bg-white z-50 shadow-xl p-6"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -36,6 +36,7 @@ const CartSidebar = ({ isOpen, onClose }) => {
               <p>No items added yet (0)</p>
             </div>
           </motion.div>
+
         </>
       )}
     </AnimatePresence>
